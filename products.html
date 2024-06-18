@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Brands</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: black;
+        }
+
+        .container {
+            text-align: center;
+            color: white;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .header h1 {
+            display: flex;
+            align-items: center;
+            margin: 0;
+        }
+
+        .header h1 img {
+            width: 80px;
+            height: 80px;
+            margin-right: 10px;
+        }
+
+        .logout-button {
+            padding: 10px 20px;
+            background-color: yellow;
+            color: black;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        h2 {
+            margin: 20px 0;
+        }
+
+        .brands {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .brandButton {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 90px;
+            border: none;
+            background: none;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .brandButton img {
+            width: 170px;
+            height: 80px;
+            object-fit: contain;
+            transition: transform 0.3s;
+        }
+
+        .brandButton:hover img {
+            transform: scale(1.1);
+        }
+
+        #products {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .product {
+            background-color: white;
+            border: 1px solid #ddd;
+            padding: 20px;
+            width: 200px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+        }
+
+        .product h2 {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .container {
+            padding: 25px;
+            margin: 35px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1><img src="/images/logo.jpg" alt="Logo"> Murali Electronics and Accessories</h1>
+            <button class="logout-button" onclick="window.location.href='login.html'">Logout</button>
+        </div>
+        <h2>APPLE | SAMSUNG | REALME | XIAOMI | <a href="FAQ.html" style="color: yellow;">FAQ</a></h2>
+        <div class="brands">
+            <button class="brandButton" data-brand="apple">
+                <img src="/images/apple.jpg" alt="Apple Logo">
+            </button>
+            <button class="brandButton" data-brand="samsung">
+                <img src="/images/samsung.jpg" alt="Samsung Logo">
+            </button>
+            <button class="brandButton" data-brand="realme">
+                <img src="/images/realme.jpg" alt="Realme Logo">
+            </button>
+            <button class="brandButton" data-brand="redmi">
+                <img src="/images/redmi.jpg" alt="Redmi Logo">
+            </button>
+        </div>
+        <div id="products" class="hidden"></div>
+    </div>
+    <script>
+        document.querySelectorAll('.brandButton').forEach(button => {
+            button.addEventListener('click', function() {
+                const brand = this.getAttribute('data-brand');
+                if (brand === 'apple') {
+                    window.location.href = 'apple-products.html';
+                } else if (brand === 'samsung') {
+                    window.location.href = 'samsung-products.html';
+                } 
+                else if (brand === 'realme') {
+                    window.location.href = 'realme-products.html';
+                }
+                else if (brand === 'redmi') {
+                    window.location.href = 'redmi-products.html';
+                }
+                else {
+                    alert('Other brand pages are not implemented yet.');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

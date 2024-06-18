@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ Page</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .faq-section {
+            margin-bottom: 20px;
+        }
+
+        .brands-list {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .brands-list li {
+            margin: 0 10px;
+            text-align: center;
+        }
+
+        .brands-list a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .brands-list a:hover {
+            text-decoration: underline;
+        }
+
+        .brand-logo {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+        }
+
+        .faq-item h3 {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            margin: 0 -20px 10px -20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .faq-item h3 .brand-logo {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+
+        .question {
+            margin-bottom: 10px;
+        }
+
+        .question h4 {
+            margin: 0;
+        }
+
+        .question p {
+            margin: 5px 0 0 0;
+        }
+
+        .button-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .button-container button {
+            background-color: yellow;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition-duration: 3s;
+        }
+
+        .button-container button:hover {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>FAQ Page</h1>
+        <div class="button-container">
+            <button onclick="window.location.href='Products.html'">Go Back</button>
+            <button onclick="window.location.href='login.html'">Log Out</button>
+        </div>
+        <div class="faq-section">
+            <h2>Brands</h2>
+            <ul class="brands-list">
+                <li><a href="#apple"><img src="/images/apple.jpg" alt="Apple Logo" class="brand-logo"> Apple</a></li>
+                <li><a href="#samsung"><img src="/images/samsung.jpg" alt="Samsung Logo" class="brand-logo"> Samsung</a></li>
+                <li><a href="#realme"><img src="/images/realme.jpg" alt="Realme Logo" class="brand-logo"> Realme</a></li>
+                <li><a href="#redmi"><img src="/images/redmi.jpg" alt="Redmi Logo" class="brand-logo"> Redmi</a></li>
+            </ul>
+        </div>
+        
+        <div id="apple" class="faq-item">
+            <h3><img src="/images/apple.jpg" alt="Apple Logo" class="brand-logo"> Apple</h3>
+            <div class="question">
+                <h4>What is Apple's latest iPhone?</h4>
+                <p>The latest iPhone is the iPhone 14, released in 2023.</p>
+            </div>
+            <div class="question">
+                <h4>What operating system does Apple use?</h4>
+                <p>Apple uses iOS for its mobile devices and macOS for its computers.</p>
+            </div>
+        </div>
+
+        <div id="samsung" class="faq-item">
+            <h3><img src="/images/samsung.jpg" alt="Samsung Logo" class="brand-logo"> Samsung</h3>
+            <div class="question">
+                <h4>What is Samsung's latest Galaxy phone?</h4>
+                <p>The latest Galaxy phone is the Samsung Galaxy S23, released in 2023.</p>
+            </div>
+            <div class="question">
+                <h4>What operating system does Samsung use?</h4>
+                <p>Samsung uses Android for its smartphones with a custom One UI skin.</p>
+            </div>
+        </div>
+
+        <div id="realme" class="faq-item">
+            <h3><img src="/images/realme.jpg" alt="Realme Logo" class="brand-logo"> Realme</h3>
+            <div class="question">
+                <h4>What is Realme's latest phone?</h4>
+                <p>The latest Realme phone is the Realme GT 2, released in 2023.</p>
+            </div>
+            <div class="question">
+                <h4>What operating system does Realme use?</h4>
+                <p>Realme uses Android for its smartphones with a custom Realme UI.</p>
+            </div>
+        </div>
+
+        <div id="redmi" class="faq-item">
+            <h3><img src="/images/redmi.jpg" alt="Redmi Logo" class="brand-logo"> Redmi</h3>
+            <div class="question">
+                <h4>What is Redmi's latest phone?</h4>
+                <p>The latest Redmi phone is the Redmi Note 12, released in 2023.</p>
+            </div>
+            <div class="question">
+                <h4>What operating system does Redmi use?</h4>
+                <p>Redmi uses Android for its smartphones with a custom MIUI skin.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redmi Products</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; /* Added for column direction */
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+            width: 80%;
+            margin: auto;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        #products {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .product {
+            background-color: black;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s;
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .product h2 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .product p {
+            font-size: 16px;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
+        }
+
+        .go-back {
+            margin-top: 45px;
+            padding: 10px 20px;
+            background-color: gray;
+            color: white;
+            border: none;
+            border-radius: 75px; 
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-align: initial;
+        }
+
+        .go-back:hover {
+            background-color: darkgray;
+        }
+
+        .product img:hover {
+            animation: spin 3s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Redmi Products</h1>
+        <div id="products">
+            <div class="product active">
+                <img src="/images/redmiNote10Pro.jpg" alt="Redmi Note 10 Pro">
+                <h2>Redmi Note 10 Pro</h2>
+                <p>This is a high-end smartphone with a large 6.7-inch screen, powerful Qualcomm Snapdragon 720G chip, and advanced camera system. It's a great choice for those who want a powerful smartphone with a large screen.</p>
+            </div>
+            <div class="product">
+                <img src="/images/redmiNote10.jpg" alt="Redmi Note 10">
+                <h2>Redmi Note 10</h2>
+                <p>This is a mid-range smartphone with a 6.5-inch screen, Qualcomm Snapdragon 720G chip, and standard camera system. It's a great choice for those who want a reliable smartphone without breaking the bank.</p>
+            </div>
+            <div class="product">
+                <img src="/images/redmiNote9Pro.jpg" alt="Redmi Note 9 Pro">
+                <h2>Redmi Note 9 Pro</h2>
+                <p>This is a high-end smartphone with a 6.7-inch screen, Qualcomm Snapdragon 720G chip, and advanced camera system. It's a great choice for those who want a powerful smartphone with a large screen.</p>
+            </div>
+            <div class="product">
+                <img src="/images/redmiNote9.jpg" alt="Redmi Note 9">
+                <h2>Redmi Note 9</h2>
+                <p>This is a mid-range smartphone with a 6.5-inch screen, Qualcomm Snapdragon 720G chip, and standard camera system. It's a great choice for those who want a reliable smartphone without breaking the bank.</p>
+            </div>
+            <div class="product">
+                <img src="/images/redmiNote8Pro.jpg" alt="Redmi Note 8 Pro">
+                <h2>Redmi Note 8 Pro</h2>
+                <p>This is a high-end smartphone with a 6.7-inch screen, Qualcomm Snapdragon 720G chip, and advanced camera system. It's a great choice for those who want a powerful smartphone with a large screen.</p>
+            </div>
+            <div class="product">
+                <img src="/images/redmiNote8.jpg" alt="Redmi Note 8">
+                <h2>Redmi Note 8</h2>
+                <p>This is a mid-range smartphone with a 6.5-inch screen, Qualcomm Snapdragon 720G chip, and standard camera system. It's a great choice for those who want a reliable smartphone without breaking the bank.</p>
+            </div>
+            <div class="product">
+                <img src="/images/redmi7A.jpg" alt="Redmi 7A">
+                <h2>Redmi 7A</h2>
+                <p>This is a budget-friendly smartphone with a 5.45-inch screen, Qualcomm Snapdragon 439 chip, and standard camera system. It's a great choice for those who want a basic smartphone at an affordable price.</p>
+            </div>
+            <div class="product">
+                <img src="/images/redmiK20Pro.jpg" alt="Redmi K20 Pro">
+                <h2>Redmi K20 Pro</h2>
+                <p>This is a high-end smartphone with a 6.4-inch screen, Qualcomm Snapdragon 855 chip, and advanced camera system. It's a great choice for those who want a powerful smartphone with a large screen.</p>
+            </div>
+            <div class="product">
+                <img src="/images/redmiK20.jpg" alt="Redmi K20">
+                <h2>Redmi K20</h2>
+                <p>This is a high-end smartphone with a 6.4-inch screen, Qualcomm Snapdragon 855 chip, and advanced camera system. It's a great choice for those who want a powerful smartphone with a large screen.</p>
+            </div>
+            <div class="product">
+                <img src="/images/redmiAirDots.jpg" alt="Redmi AirDots">
+                <h2>Redmi AirDots</h2>
+                <p>This is a budget-friendly wireless earbud with a compact design, long battery life, and seamless connectivity to Redmi devices. It's a great choice for those who want a reliable wireless earbud at an affordable price.</p>
+            </div>
+            <div class="product">
+                <img src="/images/redmiEarbudsS.jpg" alt="Redmi Earbuds S">
+                <h2>Redmi Earbuds S</h2>
+                <p>This is a budget-friendly wireless earbud with a compact design, long battery life, and seamless connectivity to Redmi devices. It's a great choice for those who want a reliable wireless earbud at an affordable price.</p>
+            </div>
+            <div class="product">
+                <img src="/images/redmiBand.jpg" alt="Redmi Band">
+                <h2>Redmi Band</h2>
+                <p>This is a budget-friendly fitness tracker with a compact design, long battery life, and seamless connectivity to Redmi devices. It's a great choice for those who want a reliable fitness tracker at an affordable price.</p>
+            </div>
+            <button class="go-back" onclick="goBack()">Go Back</button>
+        </div>
+        <script>
+            let products = document.querySelectorAll('.product');
+            let activeProduct = 0;
+            let intervalId = null;
+
+            function goBack() {
+                window.location.href = 'products.html';
+            }
+
+            function switchProduct() {
+                if (intervalId === null) {
+                    intervalId = setInterval(() => {
+                        activeProduct = (activeProduct + 1) % products.length;
+                        products.forEach((product, index) => {
+                            if (index === activeProduct) {
+                                product.classList.add('active');
+                            } else {
+                                product.classList.remove('active');
+                            }
+                        });
+                    }, 5000);
+                }
+            }
+
+            switchProduct();
+        </script>
+    </div>
+</body>
+</html>

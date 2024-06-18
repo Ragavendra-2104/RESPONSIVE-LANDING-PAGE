@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Products</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; /* Added for column direction */
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+            width: 80%;
+            margin: auto;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        #products {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .product {
+            background-color: black;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s;
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .product h2 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .product p {
+            font-size: 16px;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
+        }
+
+        .go-back {
+            margin-top: 45px;
+            padding: 10px 20px;
+            background-color: gray;
+            color: white;
+            border: none;
+            border-radius: 75px; 
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-align: initial;
+        }
+
+        .go-back:hover {
+            background-color: darkgray;
+        }
+
+        .product img:hover {
+            animation: spin 3s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Apple Products</h1>
+        <div id="products">
+            <div class="product">
+                <img src="/images/iphone15promax.jpg" alt="iPhone">
+                <h2>iPhone 15 Pro Max</h2>
+                <p>This is a flagship iPhone with a large 6.7-inch screen, powerful A15 Bionic chip, and advanced camera system. It's a great choice for those who want the best of Apple.</p>
+            </div>
+            <div class="product">
+                <img src="/images/iphone15pro.jpg" alt="iPhone">
+                <h2>iPhone 15 Pro</h2>
+                <p>This is a high-end iPhone with a 5.8-inch screen, A15 Bionic chip, and advanced camera system. It's a great choice for those who want a powerful iPhone with a smaller screen.</p>
+            </div>
+            <div class="product">
+                <img src="/images/iphone15.jpg" alt="iPhone">
+                <h2>iPhone 15</h2>
+                <p>This is a mid-range iPhone with a 6.1-inch screen, A15 Bionic chip, and standard camera system. It's a great choice for those who want a reliable iPhone without breaking the bank.</p>
+            </div>
+            <div class="product">
+                <img src="/images/iphone14promax.jpg" alt="iPhone">
+                <h2>iPhone 14 Pro Max</h2>
+                <p>This is a flagship iPhone with a large 6.7-inch screen, powerful A14 Bionic chip, and advanced camera system. It's a great choice for those who want the best of Apple.</p>
+            </div>
+            <div class="product">
+                <img src="/images/iphone14pro.jpg" alt="iPhone">
+                <h2>iPhone 14 Pro</h2>
+                <p>This is a high-end iPhone with a 5.8-inch screen, A14 Bionic chip, and advanced camera system. It's a great choice for those who want a powerful iPhone with a smaller screen.</p>
+            </div>
+            <div class="product">
+                <img src="/images/iphone14.jpg" alt="iPhone">
+                <h2>iPhone 14</h2>
+                <p>This is a mid-range iPhone with a 6.1-inch screen, A14 Bionic chip, and standard camera system. It's a great choice for those who want a reliable iPhone without breaking the bank.</p>
+            </div>
+            <div class="product">
+                <img src="/images/iwatch7.jpg" alt="Apple Watch">
+                <h2>Apple Watch Series 7</h2>
+                <p>This is a high-end smartwatch with a large 44mm screen, built-in GPS, and advanced health monitoring features. It's a great choice for those who want a premium smartwatch.</p>
+            </div>
+            <div class="product">
+                <img src="/images/iwatch8.jpg" alt="Apple Watch">
+                <h2>Apple Watch Series 8</h2>
+                <p>This is a high-end smartwatch with a large 44mm screen, built-in GPS, and advanced health monitoring features. It's a great choice for those who want a premium smartwatch.</p>
+            </div>
+            <div class="product">
+                <img src="/images/iwatch9.jpg" alt="Apple Watch">
+                <h2>Apple Watch Series 9</h2>
+                <p>This is a high-end smartwatch with a large 44mm screen, built-in GPS, and advanced health monitoring features. It's a great choice for those who want a premium smartwatch.</p>
+            </div>
+            <div class="product">
+                <img src="/images/airpods.jpg" alt="AirPods">
+                <h2>AirPods</h2>
+                <p>This is a popular wireless earbud with a compact design, long battery life, and seamless connectivity to Apple devices. It's a great choice for those who want a reliable wireless earbud.</p>
+            </div>
+            <div class="product">
+                <img src="/images/airpodspro1.jpg" alt="AirPods Pro">
+                <h2>AirPods Pro</h2>
+                <p>This is a high-end wireless earbud with active noise cancellation, water resistance, and advanced audio features. It's a great choice for those who want a premium wireless earbud.</p>
+            </div>
+            <div class="product">
+                <img src="/images/airpodspro2.jpg" alt="AirPods Pro 2nd Generation">
+                <h2>AirPods Pro 2nd Generation</h2>
+                <p>This is a high-end wireless earbud with active noise cancellation, water resistance, and advanced audio features. It's a great choice for those who want a premium wireless earbud.</p>
+            </div>
+            <div class="product">
+                <img src="/images/airpodsmax.jpg" alt="AirPods Pro Max">
+                <h2>AirPods Pro Max</h2>
+                <p>This is a high-end wireless earbud with active noise cancellation, water resistance, and advanced audio features. It's a great choice for those who want a premium wireless earbud.</p>
+                <button class="go-back" onclick="goBack()">Go Back</button>
+            </div>
+            <script>
+                function goBack() {
+                    window.location.href = 'products.html';
+                }
+            </script>
+        </body>
+        </html>
